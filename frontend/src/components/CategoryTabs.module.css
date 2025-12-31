@@ -1,0 +1,69 @@
+.tabs {
+    display: flex;
+    gap: var(--space-sm);
+    overflow-x: auto;
+    padding: var(--space-sm) 0;
+    margin-bottom: var(--space-md);
+    scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab {
+    flex-shrink: 0;
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    background: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.tab:hover {
+    background: var(--color-bg-hover);
+    border-color: var(--color-border-hover);
+    color: var(--color-text-primary);
+}
+
+.tab.active {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+/* Category-specific active colors */
+.tab.active.island {
+    background: var(--color-cat-island);
+    border-color: var(--color-cat-island);
+}
+
+.tab.active.relationship {
+    background: var(--color-cat-relationship);
+    border-color: var(--color-cat-relationship);
+}
+
+.tab.active.work {
+    background: var(--color-cat-work);
+    border-color: var(--color-cat-work);
+}
+
+.tab.active.society {
+    background: var(--color-cat-society);
+    border-color: var(--color-cat-society);
+}
+
+.tab.active.dark {
+    background: var(--color-cat-dark);
+    border-color: var(--color-cat-dark);
+}
+
+.tab.active.funny {
+    background: var(--color-cat-funny);
+    border-color: var(--color-cat-funny);
+}
